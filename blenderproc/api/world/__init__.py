@@ -1,1 +1,1 @@
-from blenderproc.python.loader.HavenEnvironmentLoader import set_world_background_hdr_img
+from blenderproc.python.loader.HavenEnvironmentLoader import set_world_background_hdr_img, change_view_transform

@@ -37,6 +37,16 @@ def set_world_background_hdr_img(path_to_hdr_file: str, strength: float = 1.0):
     # Set the brightness of the background
     background_node.inputs["Strength"].default_value = strength
 
+def change_view_transform(transform = "Standart"):
+    """
+    Sets the world background to the given hdr_file.
+
+    :param path_to_hdr_file: Path to the .hdr file
+    :param strength: The brightness of the background.
+    """
+
+    bpy.context.scene.view_settings.view_transform = transform
+
 
 def get_random_world_background_hdr_img_path_from_haven(data_path: str) -> str:
     """ Sets the world background to a random .hdr file from the given directory.
