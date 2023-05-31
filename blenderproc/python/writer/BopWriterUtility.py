@@ -22,7 +22,12 @@ from blenderproc.python.types.LinkUtility import Link
 from blenderproc.python.utility.SetupUtility import SetupUtility
 from blenderproc.python.utility.MathUtility import change_target_coordinate_frame_of_transformation_matrix
 
-os.environ['PYOPENGL_PLATFORM'] = 'egl'
+def is_platform_windows():
+    return platform.system() == "Windows"
+
+if not is_platform_windows():
+    os.environ['PYOPENGL_PLATFORM'] = 'egl'
+
 # pylint: disable=wrong-import-position
 import pyrender
 # pylint: enable=wrong-import-position
