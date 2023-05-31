@@ -21,6 +21,7 @@ from blenderproc.python.writer.WriterUtility import _WriterUtility
 from blenderproc.python.types.LinkUtility import Link
 from blenderproc.python.utility.SetupUtility import SetupUtility
 from blenderproc.python.utility.MathUtility import change_target_coordinate_frame_of_transformation_matrix
+import platform
 
 def is_platform_windows():
     return platform.system() == "Windows"
