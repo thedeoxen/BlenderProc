@@ -37,7 +37,7 @@ def set_world_background_hdr_img(path_to_hdr_file: str, strength: float = 1.0):
     # Set the brightness of the background
     background_node.inputs["Strength"].default_value = strength
 
-def change_view_transform(transform = "Standart"):
+def change_view_transform(transform = "Standard"):
     """
     Sets the world background to the given hdr_file.
 
